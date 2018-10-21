@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        .container{
+            max-width: 600px;
+            height: auto;
+            margin: 100px auto;
+            position: relative;
+        }
+        .slider{
+            width: 100%;
+            height:auto;
+            overflow: hidden;
+        }
+        .slider img{
+            width: 100%;
+            height: auto;
+        }
+        .btnRight , .btnLeft{
+            color:#fff;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 2rem;
+        }
+        .btnLeft:active , .btnRight:active{
+            color: red;
+        }
+        .btnRight{
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="slider">
+            <img id="sliderImg" src="img/1.jpeg">
+        </div>
+        <div class="btnRight"><i class="fas fa-greater-than "></i></div>
+        <div class="btnLeft"><i class="fas fa-less-than"></i></div>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
