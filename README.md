@@ -1,0 +1,2 @@
+# simpleSlider
+slider with js
